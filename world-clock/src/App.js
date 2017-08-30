@@ -1,12 +1,9 @@
+import ReactDOM from 'react-dom'
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const element = <h1>Time to tell some time</h1>
-React.DOM.render(
-  element,
-  document.getElementById('root')
-);
+
 
 
 class App extends Component {
@@ -16,9 +13,12 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>TIME</h2>
+          <div id='root'>
+          </div>
+          <div id='roottwo'>
+          </div>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
     );
@@ -26,3 +26,35 @@ class App extends Component {
 }
 
 export default App;
+
+
+// class bob extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1>LOCAL TIME</h1>
+//         <h2>{new Date().toLocaleTimeString()}</h2>
+//     </div>
+//     );
+//   }
+// }
+// setInterval(bob, 1000);
+
+
+function bob() {
+  const element = (
+    <div>
+      <h1>LOCAL TIME</h1>
+      <h2>{new Date().toLocaleTimeString()}</h2>
+    </div>
+  );
+  ReactDOM.render(
+    element,
+    document.getElementById('root')
+  );
+}
+
+setInterval(bob, 1000);
+
+
+
