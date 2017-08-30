@@ -45,4 +45,7 @@ export default App;
 
 //   componentDidMount: mounting something to the DOM
 
+//   Render will always get called in an update unless componentWillUpdate
+//   tells it not to render.
 
+//   Last method in the lifecycle is componentWillUnmount.
