@@ -34,4 +34,15 @@ export default App;
 
 
 
+// Inside of the mounting phase you have:
+//   constructor: first thing that happens with any class.
+  
+//   componentWillMount: method name that React.Component defines
+//   if you over ride them it will use you defaults.
+  
+//   render: if you want something to show up you have to over ride
+//   render.
+
+//   componentDidMount: mounting something to the DOM
+
 
